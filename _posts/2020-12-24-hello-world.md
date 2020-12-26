@@ -8,34 +8,36 @@ lectors: sagikazarmark, noslopy
 
 ### Abstract
 
-Every blog about development starts with new development. Why is that? _It is because:_
+Almost every development themed blog starts with the development of the very same blog. Why is that? _It is because:_
 
 > We coders love to create, love to achieve. It is a game for us to challenge ourselves every damn day.
 > 
 > -by me, 2020. Christmas Eve
 
-This channel of information is not different. Just in approach.  
-I want to guide you through the process:
-how I plan this, how I build this, how it should work, how it failed (before I could use it)
+This blog is not an exception from that rule either, although it takes a slightly different approach.  
+I want to guide you through the thoughtprocess of said new project:
+how I planned and would have built this blog, how it should have worked and how it failed (before I could have even used it).
 
-And good Lord ... **I will do it as overkill as possible!**
+And good Lord ... **it will be such and overkill!**
 
-#### Why, Peter? Why do you do this?
+#### Why, Peter? Why would you do this?
 
-_Because simplicity is the Way_, and I believe there is no need to solve something excessively.
+_Because simplicity is the Way_, and I believe there is no need to solve something overcomplicated. This solutions just lead to more issues and complexity.
 Therefore I will fail...
 
-...and from failure can one learn mainly!
+...and one can learn the most from failure!
 
 ---
 
 ### Planning
 
-Approach from the goal. The purpose of a blog is to give information publicly.  
+The purpose of a blog is to deliver information to the public.  
 _Organized. Categorized._
 
+That is our goal, so let us approach from this angle.
+
 This is technically just a large document sent over the internet.
-We saw it a million times, we know exactly how it needs to work. But are there other things in the background?
+We saw it a million times, we know exactly how it works. But are there other things in the background?
 
 ```qml
 ╔════════╗   "content"   ╔════════╗
@@ -44,11 +46,12 @@ We saw it a million times, we know exactly how it needs to work. But are there o
 ```
 {:.boxes}
 
-Yeah, there is. We know the content needs to be created, maintained. So maybe an editor will do.  
-Thus we are in necessity of a back-office system inevitably.  
-Now we know, the content is edited in this _admin_ somehow in some format. We are in monstrous need of authentication.
+Yeah, there are. We know the content needs to be created and maintained. So maybe there is an editor somewhere in the process.  
+Thus (inevitably) we are in need of a back-office system.  
+So the content is edited on this _admin_ panel.
+We need to make sure that only the appropriate people have access to the system which begs for some sort of authentication.
 
-Let us say it loud: we want an application to manage the contents of the ... of the?! ...
+Let us say out loud: we want an application to manage the contents of the ... of the?! ...
 
 ... of the other application who displays the contents.
 
@@ -71,13 +74,13 @@ Let us say it loud: we want an application to manage the contents of the ... of 
 ```
 {:.boxes}
 
-The communication between the back-office and the display app is intriguing. The content is stored in the back-office database as so the assets.  
-Because we are counting an outstanding amount of visitors, the best if we give themselves a few generated static document.  
-(yes, as most of the crappy blogs around here. Seems too simple for us, but wait for it)
+The connection between the back-office and the display app is intriguing. The content is stored in the back-office database, so are the different assets.  
+Because we expect a large number of visitors, we should probably generate static documents from the content.  
+(yes, as most of the crappy blogs around here. Seems pretty simple, but wait for it)
 
-Tags section is easy to make. But what about the comment section? That cannot be exclusively static, and we need to moderate it somehow.  
-But not everyone can post and moderate if we have more _content managers_.  
-We need authorization too. Maybe an RBAC helps.
+Tags section is an easy feature to add. But what about the comment section? That is not static content, and we also need to be able moderate it somehow.  
+Let us not make it too easy: we should differentiate _content managers_: some of them should be responsible for the content, some of them should moderate comments.  
+So we need authorization too. Maybe adding RBAC is the right solution?
 
 ```ruby
 ╔══════════╗ "give me contents plz" ╔═══════╗                  
@@ -119,32 +122,32 @@ We need authorization too. Maybe an RBAC helps.
 ```
 {:.boxes}
 
-And do not forget, we need to separate the back-office frontend code from the backend. So that is truly two apps.
+And do not forget, we need to separate the back-office frontend code from the backend. So in fact those are rather two apps.
 
-But can we operate more entities from this only engine? Why not! Just some route magic.  
-And we want to do all of this in a modern manner. We **must** use microservices. We must set up autoscale.
+But can we manage more entities in this application? Why not! Just apply some route magic.  
+Obviously, we want to do all of this in a fashionable manner. So we **have to** use microservices with auto scaling.
 
-A Kubernetes cluster is needed too unequivocally. __* evil laugh *__
+Finally, we have the perfect reason to add Kubernetes to the mix. __* evil laugh *__
 
 ---
 
 ### Conclusion
 
-I did just planned the IT architecture and infrastructure of a segment of a billions USD worth global market?  
-Yeeeeeah... broadly. Now I have a universal solution for hosting any and many online newspaper/blog.  
+Did I just plan the IT architecture and infrastructure for a segment of a billions USD worth global market?  
+Yeeeeeah... broadly. Now I have a universal solution for hosting any online newspaper/blog.  
 I assume most of these "blog" platform companies have something like this.
 
-Nevertheless, I just tossed some buzzwords: the job is undone.
+Nevertheless, I just tossed in some buzzwords: the job is undone.
 
-But I am no company (that is actually a lie), and need no such complexity.  
-This is how I failed this project _before it starts_.
+But I am not a company (that is actually a lie), and need no such complexity.  
+This is how I failed this project _before it started_.
 
-A simple HTML document which includes the content from somewhere what compiles the markdown is more than enough for me yet.  
-Maybe with a 3rd party comment service ;-)
+A simple HTML document generated from markdown is more than enough for me at this point.  
+With a third-party comment service ;-)
 
-**This the conception of this blog. Modelling, planning, maybe some practical implementation.  
-Trying out technologies, make experiments, and fail!
-We learn together...**
+**This the concept of this blog. Modeling, planning, maybe some practical implementation.  
+Trying out technologies, experimenting, and failing....a lot!
+Let us learn together...**
 
 > The task is done; the Maker rests.
 >
