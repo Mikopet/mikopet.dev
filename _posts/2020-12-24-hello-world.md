@@ -1,6 +1,8 @@
-# println!("{} World!", "Hello");
-###### 2020.12.24, #architect
-
+---
+layout:     post
+title:      "println!(\"{} World!\", \"Hello\");"
+date:       2020-12-24
+categories: architect
 ---
 
 #### Abstract
@@ -8,6 +10,7 @@
 Every blog about development starts with a new development. Why is that? _It is because:_
 
 > We coders love to create, love to achieve. It is a game for us to challenge ourselves every damn day.
+> 
 > -by me, 2020. Christmas Eve
 
 This channel of informations has no difference.
@@ -137,5 +140,6 @@ Maybe with a 3rd party comment service ;-)
 Trying out technologies, make experiments, and fail!
 We learn together**
 
-> The machine rotates, the creator rests.
+> The task is done; the Maker rests.
+>
 > -Imre Madách, The Tragedy of Man, 1883
