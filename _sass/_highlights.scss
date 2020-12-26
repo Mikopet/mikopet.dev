@@ -1,13 +1,13 @@
 
 .highlight {
-  background-color: #efefef;
+  background-color: #313313;
   padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
   -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   margin: 20px 0 20px 0;
-  overflow: scroll;
+  overflow: auto;
 }
 
 code {
@@ -82,3 +82,16 @@ code {
 .highlight .vg { color: #268BD2 } /* Name.Variable.Global */
 .highlight .vi { color: #268BD2 } /* Name.Variable.Instance */
 .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
+
+// Boxes
+
+.boxes {
+  text-align: center;
+  line-height: 0.92;
+  letter-spacing: -1px;
+
+  .highlight .nx { color: #DAD }
+  .highlight .dl { color: #ADA }
+  .highlight .sb { color: #EFE }
+  .highlight .no { color: #DAD }
+}
