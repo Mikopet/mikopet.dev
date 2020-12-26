@@ -1,0 +1,11 @@
+<div class="lecturers">
+{{include.caption}}:
+
+{% assign tableItems = include.items | split: ", " %}
+{% assign tableFileParam = {{include.file}} %}
+{% assign tableFile = site.data[tableFileParam] %}
+
+{% for entry in tableItems %}
+    <a href="{{ tableFile[entry].url }}">@{{ entry }}</a>
+{% endfor %}
+</div>

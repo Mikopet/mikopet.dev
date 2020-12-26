@@ -3,6 +3,7 @@ layout:     post
 title:      "println!(\"{} World!\", \"Hello\");"
 date:       2020-12-24
 categories: architect
+lecturers:  sagikazarmark, noslopy
 ---
 
 ### Abstract

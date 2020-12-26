@@ -13,5 +13,9 @@ layout: default
         Written on {{ page.date | date: "%B %e, %Y" }}
     </div>
 
+    {% if page.lecturers %}
+    {% include lecturers.html items=page.lecturers file="lecturers" caption="Lecturers" %}
+    {% endif %}
+
     {% include disqus.html %}
 </article>
