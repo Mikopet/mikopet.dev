@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "println!(\"{} World!\", \"Hello\");"
+title: "println!(&quot;{} World!&quot;, &quot;Hello&quot;);"
 date: 2020-12-24
 tags: modeling architect
 lectors: sagikazarmark, noslopy
