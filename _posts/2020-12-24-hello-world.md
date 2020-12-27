@@ -2,7 +2,7 @@
 layout: post
 title: "println!(\"{} World!\", \"Hello\");"
 date: 2020-12-24
-categories: architect
+tags: modeling architect
 lectors: sagikazarmark, noslopy
 ---
 
