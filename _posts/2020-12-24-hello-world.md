@@ -10,8 +10,8 @@ lectors: sagikazarmark, noslopy
 
 Almost every development themed blog starts with the development of the very same blog. Why is that? _It is because:_
 
-> We coders love to create, love to achieve. It is a game for us to challenge ourselves every damn day.
-> 
+> We coders love to create, love to achieve. It is a game for us to challenge ourselves every damn day.<!--more-->
+>
 > -by me, 2020. Christmas Eve
 
 This blog is not an exception from that rule either, although it takes a slightly different approach.  

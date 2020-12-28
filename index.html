@@ -10,7 +10,7 @@ layout: default
       {% include post-attributes.html %}
 
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | remove: 'Abstract' }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More &GreaterGreater;&GreaterGreater;</a>
