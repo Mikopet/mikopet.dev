@@ -9,6 +9,10 @@ twitter_username: Mikopet
 github_username:  Mikopet
 
 permalink: /:title/
+excerpt_separator: "<!--more-->"
+
+disqus: mikopet-dev
+google_analytics: G-XB4N88TZZW
 
 plugins:
   - jekyll-feed
@@ -29,13 +33,6 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
-disqus: mikopet-dev
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-excerpt_separator: "<!--more-->"
-
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -43,7 +40,6 @@ kramdown:
   syntax_highlighter_opts:
     default_lang: html
     css_class   : 'syntax'
-
 
 sass:
   style: :compressed
