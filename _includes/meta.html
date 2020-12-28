@@ -6,13 +6,18 @@
     {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt| strip_html | remove: 'Abstract' }}" />
     <meta property="og:description" content="{{ page.excerpt | strip_html | remove: 'Abstract' }}" />
+    <meta name="twitter:card" content="summary_large_image">
     {% else %}
     <meta name="description" content="{{ site.description }}">
     <meta property="og:description" content="{{ site.description }}" />
     {% endif %}
+
     <meta name="author" content="{{ site.title }}" />
+    <meta property="og:site_name" content="{{ site.title }}">
 
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     {% endif %}
+
+    <meta name="twitter:site" content="@{{ twitter_username }}">
