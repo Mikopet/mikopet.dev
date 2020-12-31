@@ -8,10 +8,10 @@ url: "https://mikopet.dev"
 twitter_username: Mikopet
 github_username:  Mikopet
 
-permalink: /:title/
+permalink: /:categories/:title/
 excerpt_separator: "<!--more-->"
 
-disqus: mikopet-dev
+disqus: mikopet-dot-dev
 google_analytics: G-XB4N88TZZW
 
 plugins:
