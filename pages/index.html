@@ -4,7 +4,6 @@ permalink: /
 ---
 
 <div class="posts">
-  {% assign posts = site.collections | where: "label", "blog" %}
   {% assign posts = site.posts | where: 'category', 'blog' %}
   {% for post in posts %}
     <article class="post">
@@ -13,7 +12,7 @@ permalink: /
       {% include post-attributes.html %}
 
       <div class="entry">
-        {{ post.excerpt | remove: 'Abstract' }}
+        {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More &GreaterGreater;&GreaterGreater;</a>

@@ -5,6 +5,7 @@ date: 2020-12-24
 category: blog
 tags: modeling architect
 lectors: sagikazarmark, noslopy
+image: https://opensource.com/sites/default/files/styles/image-full-size/public/lead-images/rust_programming_crab_sea.png
 ---
 
 Almost every development themed blog starts with the development of the very same blog. Why is that? _It is because:_
