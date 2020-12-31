@@ -2,11 +2,10 @@
 layout: post
 title: "println!(&quot;{} World!&quot;, &quot;Hello&quot;);"
 date: 2020-12-24
+category: blog
 tags: modeling architect
 lectors: sagikazarmark, noslopy
 ---
-
-### Abstract
 
 Almost every development themed blog starts with the development of the very same blog. Why is that? _It is because:_
 

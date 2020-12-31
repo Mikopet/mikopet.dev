@@ -1,0 +1,7 @@
+---
+layout: page
+permalink: /license
+---
+
+{% capture license_raw %}{% include_relative license.md %}{% endcapture %}
+{{ license_raw | markdownify }}
