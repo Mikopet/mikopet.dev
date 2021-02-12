@@ -4,6 +4,7 @@ title: "A client daemon? What?"
 date: 2021-02-12
 category: blog
 tags: snippet bash discord
+image: https://i1.sndcdn.com/artworks-000504413088-559qct-t500x500.jpg
 ---
 
 Have you ever been in a situation where you had no possibilities to solve the problem?  
