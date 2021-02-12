@@ -12,8 +12,8 @@ But there is always a _workaround_.
 
 <!--more-->
 
-The last summer we worked from home and meet on discord. Actually, that was not bad at all, and it was for free!  
-I did use the official client on Linux which was an electron app. That worked properly... except I got always `Segmentation fault` randomly!
+Last summer we worked from home and met on discord. Actually, that was not bad at all, and it was for free!  
+I did use the official client on Linux which was an electron app. That worked properly... except I got `Segmentation fault` over and over!
 
 Because I could not fix the failure due to the lack of competence and had no access to the source code: I did go with an auto-restart when the app crashed.
 
@@ -54,7 +54,7 @@ We modified the echo line too: the name of the crashed program is in the message
 At the end of the line, there is the `>` redirection operator which points to `&2`, the standard error. Because there is an error, and we want to send that in the proper [I/O stream].
 
 #### How can I use this snippet for other commands easily?
-Just catch an argument and use that in the `which` statement. Optionally you can catch a second argument for some delay between the auto restart. Some software requires that.
+Just catch an argument and use that in the `which` statement. Optionally you can catch a second argument for some delay between the auto restart. Some software require that.
 
 ```bash
 #!/bin/bash
@@ -74,9 +74,9 @@ until $(which $1); do
 done
 ```
 
-First, we check that is any command given to us. If not, we print some message.  
+First, we check whether any command is given to us. If not, we print some message.
 After that, we put down the given `sleep_time` argument in a variable or set it to default `0`.
-And the last step is when we run the command we do by the given `command` argument.
+And the last step is when we run the command we do it by the given `command` argument.
 
 We have no more task to do but copy this file to somewhere to autoload:
 ```bash
