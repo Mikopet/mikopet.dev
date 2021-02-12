@@ -11,6 +11,15 @@
   overflow: auto;
 }
 
+code.highlighter-rouge {
+  border: 1px solid #bbb;
+  background-color: #eaeaea;
+  letter-spacing: -1px;
+  color: #000;
+  border-radius : 8px;
+  padding: 0px 5px;
+}
+
 code {
   font-family: $monospace;
 }
