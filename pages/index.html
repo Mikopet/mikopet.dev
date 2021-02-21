@@ -9,8 +9,12 @@ permalink: /
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      {% include post-attributes.html %}
-
+      <hr/>
+      <div class="date">
+        {{ post.date | date: "%B %e, %Y" }} &middot;
+        <a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.slug }}">Post a comment</a>
+        &middot; {% include read-time.html content=post.content %}
+      </div>
       <div class="entry">
         {{ post.excerpt }}
       </div>

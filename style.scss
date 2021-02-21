@@ -123,6 +123,17 @@ img {
   color: $gray;
 }
 
+.tags {
+  text-align: center;
+}
+
+.read-time {
+  text-align: right;
+  color: $gray;
+  line-height: 10px;
+  padding-bottom: 10px;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
