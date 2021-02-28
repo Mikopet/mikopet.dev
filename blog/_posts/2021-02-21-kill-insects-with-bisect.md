@@ -7,7 +7,7 @@ tags: bug bash git bisect math python selenium test
 image: https://www.tutorialdocs.com/upload/2019/01/git-bisect-01.png
 ---
 
-One of the most magnificent day of all times your boss finds you and cloud your toughts with an extremly unpleasant situation: 
+One of the most magnificent days of all times your boss finds you and cloud your thoughts with an extremely unpleasant situation:
 **There is a serious malfunction in the main business logic!**
 
 Nobody knows when or why it is implemented this way... that part of the codebase is not touched by anyone for ages and it worked before... That is a mystery...
@@ -16,14 +16,14 @@ Nobody knows when or why it is implemented this way... that part of the codebase
 
 ### Solve this!
 
-First thing you should investigate is that there is any test present for that function and if there is: why is that test **false positive**.
-This is the better outcome, because one need to fix some tests according to the current _valid_ behaviour. And of course the code after all.
+The first thing you should investigate is that there is any test present for that function and if there is: why is that test **false positive**.
+This is the better outcome because one needs to fix some tests according to the current _valid_ behaviour. And of course the code after all.
 
 #### But what to do if there is no test for that operation?
 
 Well, I am sure you know that: **Make one!**
 
-For example: I had a feature in this blog on index page. This feature showed the [tags] over the post excerpt.
+For example, I had a feature in this blog on the index page. This feature showed the [tags] over the post excerpt.
 But I redesigned it, so I do not have this feature anymore. My test checks if is there any `#` in that line.
 Let us say: this is the bug we are searching for now.
 
@@ -53,17 +53,19 @@ if __name__ == "__main__":
   unittest.main()
 ```
 
-When you run this test it is failing of course. That is valid because function is broken yet. But we know it worked sometime in the past.
+When you run this test it is failing of course. That is valid because the function is broken yet. But we know it worked some time in the past.
 
 > Who cares? Just fix the code and move on!
 
 **You can say in your case. And you are right**... well, at least partially.
 You need to know when and why that bug appeared. Not because of blaming the author, but because there must be a reason.  
-So with that careless behaviour your "fix" can cause other bugs in the system unwittingly.
+So with that careless behaviour, your "fix" can cause other bugs in the system unwittingly.
 
 #### You need to find the root cause!
 
-Let us say, we have a [sigmoid function] implemented by somebody, but we do not know where is the [inflection point] of it. We only know that is a positive integer between 1 and 100.  
+Let us say, we have a [sigmoid function] implemented by somebody, but we do not know where is the [inflexion point] of it.
+
+We only know that is a positive integer between 1 and 100.
 We know, and we can prove the input **100** returns `true`, while the input **1** returns `false`.
 To find the value of that point we need to check all the possibilities!
 
@@ -76,19 +78,19 @@ Starting with the middle of the possibilities:
  - Check the **40**. Is it true? No. Is it **false**? Yes.
  - Check the **42**. Is it true? No. Is it false? No.
 
-We just found the solution in **6 steps** instead of the minimum effort **42 steps** if we were going incrementally!
+We just found the solution in **6 steps** instead of the minimum effort of **42 steps** if we were going incrementally!
 
-This is what `git bisect` does.  
-Goes back in the repository and checkout the next commit by bisection, so you can decide it is failing or not. According to your answer it steps forward or backward.
+This is what `git bisect` does:  
+Goes back in the repository and `checkout` the next commit by bisection, so you can decide it is failing or not. According to your answer, it steps forward or backwards.
 Even on large numbers like tens of thousand commits it can run very quickly. And this is the deal here:
 
-**In your case you need to avoid checking vast amount of irrelevant commits.**
+**In your case, you need to avoid checking a vast amount of irrelevant commits.**
 
 #### Testing with git bisect
 
 We have the test, we have the searching method. Put it together.
 
-##### It is mandatory to not commit the test yet! Otherwise it will be versioned and disappears between checkouts.
+##### It is mandatory to not commit the test file yet! Otherwise, it will be versioned and disappears between checkouts.
 
 I know of a working version where I introduced this feature(`f69a1d88`). And a "broken" version where it is not working (where we are yet, aka. `HEAD`).  
 To start the debugging in my case just run:
@@ -98,7 +100,7 @@ $ git bisect start HEAD f69a1d88
 $ python test.py
 ```
 
-According to the outcome we just need to tell to the bisecting process which way to continue. Typing `good` or `bad` as argument of bisect, and run the test again.
+According to the outcome we just need to define to the bisecting process which way to continue. Typing `good` or `bad` as argument of the bisect command, and run the test again.
 
 ```bash
 $ git bisect <good|bad>
@@ -111,8 +113,8 @@ After a few steps we are done, and we got something like this:
 d4f8a03852501f57d3b568d98affddef9d3b3056 is the first bad commit
 ```
 
-This is very satisfying... but with really huge amounts of commits it is still a pain.
-Fortunately we can automate it:
+This is very satisfying... but with really huge amounts of commits, it is still a pain.
+Fortunately, we can automate it:
 
 ```bash
 $ git bisect start HEAD f69a1d88
@@ -195,9 +197,9 @@ Date:   Sun Feb 21 14:28:06 2021 +0100
 bisect run success
 ```
 
-In 27 sec. Without touching anything! That is a remarkable debugging process!
+In 27 seconds... without touching anything! That is a remarkable debugging process!
 
-Well, in your case ... 
+Well, in your case:
 
 > You always need to dive deep into the _cause and effect_.  
 > Perhaps, the feature is broken...  by design.
@@ -205,6 +207,6 @@ Well, in your case ...
 
 [tags]: https://mikopet.dev/tags
 [sigmoid function]: https://en.wikipedia.org/wiki/Sigmoid_function
-[inflection point]: https://en.wikipedia.org/wiki/Inflection_point
+[inflexion point]: https://en.wikipedia.org/wiki/Inflection_point
 [bisection method]: https://en.wikipedia.org/wiki/Bisection_method
 
