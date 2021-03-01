@@ -12,16 +12,17 @@ layout: default
     </div>
 
     <div class="date">Written on {{ page.date | date: "%B %e, %Y" }}</div>
+    {% if page.lectors %}
+    {% include lectors.html items=page.lectors %}
+    {% endif %}
+
     <hr/>
+
     <div class="tags">
     {% for tag in page.tags %}
         <a href="{{ site.baseurl }}/tags#{{ tag }}">#{{ tag }}</a>
     {% endfor %}
     </div>
-
-    {% if page.lectors %}
-    {% include lectors.html items=page.lectors file="lectors" caption="Lectors" %}
-    {% endif %}
 
     {% include disqus.html %}
 </article>

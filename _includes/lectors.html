@@ -1,11 +1,13 @@
 <div class="lecturers">
-{{include.caption}}:
+Lectors:
 
 {% assign tableItems = include.items | split: ", " %}
-{% assign tableFileParam = {{include.file}} %}
-{% assign tableFile = site.data[tableFileParam] %}
 
 {% for entry in tableItems %}
-    <a href="{{ tableFile[entry].url }}">@{{ entry }}</a>
+    {% if site.data.lectors[entry].url != '' %}
+    <a href="{{ site.data.lectors[entry].url }}">@{{ entry }}</a>
+    {% else %}
+    @{{entry}}
+    {% endif %}
 {% endfor %}
 </div>

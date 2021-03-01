@@ -4,6 +4,7 @@ title: "Kill insects with &quot;bisect&quot;"
 date: 2021-02-28
 category: blog
 tags: bug bash git bisect math python selenium test
+lectors: tolcso
 image: https://www.tutorialdocs.com/upload/2019/01/git-bisect-01.png
 ---
 
