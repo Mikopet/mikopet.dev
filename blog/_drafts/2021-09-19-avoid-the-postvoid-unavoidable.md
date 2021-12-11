@@ -7,11 +7,10 @@ tags: architect infrastructure math
 image: https://cdn.mos.cms.futurecdn.net/REbMruWs8PukHAYdZ5XcsK-970-80.jpg
 ---
 
-
 Although, the title is an oxymoron... it provides an important thought:
 
-> You want to evade the problems you likely will encounter. That is called precaution.
-> - by myself, again
+> You want to evade the problems you likely will encounter. That is called precaution.<!--more-->  
+> -by myself, again
 
 Let me tell about the background why this post was born. In my native country there is a tradition for creating inadequate infrastructures for almost everything not sparing the IT industry. Especially at the state level where we do fancy apps on a "bread-toaster" and wondering why it dies under a few dozen users.
 That is why we need to talk about _reliability_ and _availability_.
