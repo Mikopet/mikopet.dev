@@ -8,7 +8,7 @@ lectors: rust-community
 image: https://www.apriorit.com/images/articles/Rust_language_tutorial.jpeg
 ---
 
-I am trying to write this post for almost two to three months now...
+I was trying to write this post for almost two to three months now...
 and I am getting the feeling, it is something that cannot be done. Ever...  
 > Anyhow, content must be born!<!--more-->  
 >  -by me, again
@@ -55,13 +55,17 @@ In detail, you can read about this on [FP Complete].
 
 ##### What is Rust then?
 
-Well, we can say that Rust is multi-paradigm, but basically: **Rust is imperative**.
+Well, we can say that **Rust is multi-paradigm**. It has a little bit of this, a little bit of that...
+with a **structured** and imperative backbone.
 
 Designed for performance and safety, especially safe concurrency.
 One of the most powerful features is, that Rust does a lot of correctness checking at compile time.
 Hence, there is no garbage collection at all, still, it can guarantee memory safety!
 
 Rust has been called a systems programming language... but to be honest: you can do basically everything with it.
+It is a **general-purpose** language! With a strong typing system and type inference.
+
+> Rust represents the best ideas from the last 30-years of cutting edge research in language design
 
 #### What do I do with it?
 
