@@ -20,14 +20,14 @@ plugins:
 
 footer-links:
   dribbble:
-  email:
-  facebook: mikopet
+  email: mikopet@gmail.com
+  facebook:
   flickr:
   github: Mikopet
   instagram:
   linkedin: mikopet
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: on # just type anything here for a working RSS icon
   twitter: Mikopet
   stackoverflow: users/2488588/mikopet
   youtube: # channel/<your_long_string> or user/<user-name>
