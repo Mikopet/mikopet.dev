@@ -16,6 +16,8 @@ test_command () {
 echo "Test results:"
 
 test_command "href=.{0,1}/"
+test_command "[a-z]'m"
+test_command "[a-z]'re"
 test_command "[a-z]'s"
 test_command "\t" noinclude
 
