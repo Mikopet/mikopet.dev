@@ -3,9 +3,14 @@ layout: default
 ---
 
 <article class="post">
-    <h1>{{ page.title }}</h1>
-    <hr/>
-    <div class="read-time">[{% include read-time.html content=page.content %}]</div>
+    <div class="header">
+        <h1>{{ page.title }}</h1>
+        <div class="read-time">[{% include read-time.html content=page.content %}]</div>
+    </div>
+
+    {% if page.update %}
+    {% include living.html update=page.update %}
+    {% endif %}
 
     <div class="entry">
         {{ content }}
