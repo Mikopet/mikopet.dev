@@ -24,7 +24,7 @@ It is because the system shone approximately 4 hours and if we suppose the break
 [image]
 
 Let us say the average user spent around 5 minutes with the whole process (you need to choose between a few candidates) and left. Hence, we can calculate with the 34% of the 3 million users and distribute them equally in the given 80 minutes divided in 5 minutes. One 5 minute block deals with 63750 users. It is not very lifelike if an user does more interaction at the same time, so this throughput is about roughly 200 request/sec.
-That is no more than a moderate size webshop's usage on black friday.
+That is no more than the usage of a moderate size webshop on black friday.
 
 ## But what can we do?
 

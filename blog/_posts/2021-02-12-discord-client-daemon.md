@@ -84,7 +84,7 @@ We have no more task to do but copy this file to somewhere to autoload:
 $ cp autorestarter_from_mikopet_dev /usr/local/bin/autorestart
 ```
 
-And we can use it in the `.desktop` files as a prefix. For example we can edit the discord's file at `/usr/share/applications/discord.desktop`:
+And we can use it in the `.desktop` files as a prefix. For example we can edit the discord start file at `/usr/share/applications/discord.desktop`:
 
 ```ini
 Name=Discord
