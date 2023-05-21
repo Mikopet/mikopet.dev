@@ -1,16 +1,24 @@
 sagikazarmark:
-  name: Sági-Kazár Márk
+  name: "Sági-Kazár Márk"
   url: https://github.com/sagikazarmark
 
 noslopy:
-  name: Kiss Bence
+  name: "Kiss Bence"
   url: https://noslopy.dev
 
 tolcso:
-  name: Ősz Olivér
+  name: "Ősz Olivér"
   url: ''
 
 rust-community:
-  name: Rust Community Discord
+  name: "Rust Community Discord"
   url: https://discord.gg/rust-lang-community
+
+fereantin:
+  name: "Gózon Fanni"
+  url: https://www.linkedin.com/in/fibonacci11235
+
+tacsiazuma:
+  name: "Papp Krisztián"
+  url: https://twitter.com/Tacsiazuma
 
