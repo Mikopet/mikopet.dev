@@ -136,14 +136,14 @@ img {
 }
 
 .living {
-  position: relative;
-  border-radius: 10px;
+  position: initial;
+  border-radius: 5px;
   padding: 1px;
   background-color: lightsteelblue;
-  margin: 20px;
+  margin: 20px 0;
 
   .icon {
-    border-radius: 10px;
+    border-radius: 5px 0 0 5px;
     padding: 0 25px;
     margin-right: 20px;
     background: steelblue;
