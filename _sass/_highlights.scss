@@ -22,6 +22,7 @@ code.highlighter-rouge {
 
 code {
   font-family: $monospace;
+  font-variation-settings: "wdth" 125;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
